@@ -16,6 +16,7 @@ let HexagonStack = function(p) {
       p.canvas = p.createCanvas(p.windowWidth, p.windowHeight);
       p.canvas.position(0, 0);
       p.canvas.style('z-index', '-1');
+      p.canvas.style('position', 'fixed');
       bk = p.random(BK);
       
       //Hexagon parameters

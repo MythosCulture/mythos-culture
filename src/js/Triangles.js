@@ -10,6 +10,7 @@ let Triangles = function(p) {
       p.canvas = p.createCanvas(p.windowWidth, p.windowHeight);
       p.canvas.position(0, 0);
       p.canvas.style('z-index', '-1');
+      p.canvas.style('position', 'fixed');
       
       lineWeight = 3; //default 3, 0 for none
       cellSize = 100; //width and height of cell
