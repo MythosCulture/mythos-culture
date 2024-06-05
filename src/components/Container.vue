@@ -34,7 +34,6 @@
           </template>
         </ProjectBlock>
         <ProjectBlock
-        :url="processing.url" 
         :title="processing.title"
         :description="processing.description">
             <template #tags>
@@ -81,19 +80,18 @@ const ravenous = {
   description: 'Simple React web app that utilizes the Yelp Fusion API.'
 }
 const processing = {
-  url: '/',
   title: 'Processing Canvases',
   description: 'Web canvas backgrounds written in Java for processing then converted to Javascript for use with the p5.js library.'
 }
 
 const hexagonstack = {
   name:'HexagonStack',
-  url: '/',
+  url: 'https://github.com/MythosCulture/HexagonStack_JS',
   description: 'Generates randomized stacked honeycomb patterns as a versatile web canvas background.'
 }
 const triangles = {
   name:'Triangles',
-  url: '/',
+  url: 'https://github.com/MythosCulture/Triangles_JS',
   description: 'Generates randomized triangle patterns.'
 }
 </script>

@@ -2,7 +2,7 @@
     <div class="project-block">
         <div class="project-header">
             <h3 class="project-title">{{ title }}</h3>
-            <CodeButton :url=url>Code</CodeButton>
+            <CodeButton v-if="url" :url=url>Code</CodeButton>
         </div>
         <div class="project-desc">
             {{ description }}
@@ -30,8 +30,7 @@ const props = defineProps({
         required: true
     },
     url: {
-        type: String,
-        required: true
+        type: String
     }
 })
 </script>
@@ -62,7 +61,7 @@ const props = defineProps({
     font-family: Arial, Helvetica, sans-serif;
 }
 .project-desc {
-    padding-top: 5px;
+    padding-top: 10px;
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

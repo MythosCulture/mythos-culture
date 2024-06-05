@@ -10,7 +10,7 @@ import { sketch } from '../js/eventBus.js';
 import HexagonStack from '../js/HexagonStack.js';
 import Triangles from '../js/Triangles.js';
 
-const canvas = ref()
+const canvas = ref(null)
 
 const sketchDict = {
     HexagonStack,
@@ -31,7 +31,7 @@ const createP5Instance = (sketchName, ref) => {
 
 onMounted(() =>{
     if (canvas.value && sketchDict[sketch['current']]) {
-        createP5Instance(sketch['current'], canvas.value)
+        createP5Instance(sketch['current'], canvas)
     } else {
         if (!canvas.value) {
             console.error('Canvas element not found');
@@ -44,12 +44,13 @@ onMounted(() =>{
 
 watch(() => sketch.current, (newSketch, oldSketch) => {
   if (canvas.value && sketchDict[newSketch]) {
-    createP5Instance(newSketch, canvas.value);
+    createP5Instance(newSketch, canvas);
   }
 });
 </script>
 <style>
     .p5Canvas {
+        display: block;
         overflow: hidden;
     }
 </style>
