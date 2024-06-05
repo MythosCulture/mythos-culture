@@ -66,7 +66,7 @@ import Tag from './Tag.vue';
 
 
 const mythosculture = {
-  url: '/',
+  url: 'https://github.com/MythosCulture/mythos-culture',
   title: 'MythosCulture.blog',
   description: 'My digital portfolio; a static site designed in Webflow, built with Vue.js, and optimized with Webpack.'
 }

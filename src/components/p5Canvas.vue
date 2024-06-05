@@ -1,5 +1,5 @@
 <template>
-    <div ref="canvas">
+    <div ref="canvas" class="p5Canvas">
     </div>
 </template>
 
@@ -47,6 +47,9 @@ watch(() => sketch.current, (newSketch, oldSketch) => {
     createP5Instance(newSketch, canvas.value);
   }
 });
-
-
 </script>
+<style>
+    .p5Canvas {
+        overflow: hidden;
+    }
+</style>
