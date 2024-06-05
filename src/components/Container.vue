@@ -68,12 +68,12 @@ import Tag from './Tag.vue';
 const mythosculture = {
   url: 'https://github.com/MythosCulture/mythos-culture',
   title: 'MythosCulture.blog',
-  description: 'My digital portfolio; a static site designed in Webflow, built with Vue.js, and optimized with Webpack.'
+  description: 'Welcome to my digital portfolio, designed and built by me using Vue.js. I created this site to not only showcase my web development journey but to also display my code-art created in Processing (try my canvases below!).'
 }
 const scarabrp = {
   url: 'https://github.com/MythosCulture/BloomBoard',
   title: 'ScarabRP',
-  description: 'A personal hobby project, a collaborative story writing (roleplaying) website made using Java Springboot and PostgreSQL.'
+  description: 'A WIP personal hobby project, a collaborative story writing (roleplaying) website made using Java Springboot and PostgreSQL.'
 }
 const ravenous = {
   url: 'https://github.com/MythosCulture/Ravenous-ReactProject',

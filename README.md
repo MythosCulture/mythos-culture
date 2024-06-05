@@ -1,6 +1,6 @@
 # mythos-culture
 
-Empty project.
+My digital portfolio; a static site designed in Webflow, built with Vue.js, and optimized with Webpack.
 
 ## Building and running on localhost
 
