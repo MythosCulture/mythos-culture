@@ -46,6 +46,16 @@
                 />
             </template>
         </ProjectBlock>
+        <ProjectBlock
+        :url="gallery.url"
+        :buttonText="gallery.buttonText"
+        :title="gallery.title"
+        :description="gallery.description">
+        <template #tags>
+            <Tag>Macrophotography</Tag>
+            <Tag>Beware: Bugs & Spiders</Tag>
+        </template>
+        </ProjectBlock>
     </div>
 </template>
 
@@ -54,6 +64,12 @@ import ProjectBlock from './ProjectBlock.vue';
 import SubProject from './SubProject.vue';
 import Tag from './Tag.vue';
 
+const gallery = {
+  url: '#/gallery',
+  buttonText: 'Go to gallery',
+  title: 'Photography',
+  description: 'Browse my photography! Taken on my sony a6000; Macrophotography done with a 7Artisan macro lens.'
+}
 
 const mythosculture = {
   url: 'https://github.com/MythosCulture/mythos-culture',

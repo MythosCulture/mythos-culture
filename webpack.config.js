@@ -26,6 +26,10 @@ const config = {
           'vue-style-loader',
           'css-loader'
         ]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        type: 'asset/resource'
       }
     ]
   },

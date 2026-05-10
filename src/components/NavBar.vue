@@ -5,6 +5,7 @@
                 <b>Mythos</b>Culture
             </a>
         </h1>
+        <NavButton buttonText="Gallery" url="#/gallery"/>
         
         <NavButton buttonText="Github" :url="github"/>
     </div>
