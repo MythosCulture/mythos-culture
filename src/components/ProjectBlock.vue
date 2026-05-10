@@ -2,7 +2,7 @@
     <div class="project-block">
         <div class="project-header">
             <h3 class="project-title">{{ title }}</h3>
-            <CodeButton v-if="url" :url=url>Code</CodeButton>
+            <CodeButton v-if="url" :url="url">{{ buttonText }}</CodeButton>
         </div>
         <div class="project-desc">
             {{ description }}
@@ -31,6 +31,10 @@ const props = defineProps({
     },
     url: {
         type: String
+    },
+    buttonText: {
+        type: String,
+        default: "Code"
     }
 })
 </script>

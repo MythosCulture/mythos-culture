@@ -1,13 +1,19 @@
 <template>
     <div class="nav">
-        <h1 class="nav-title"><b>Mythos</b>Culture</h1>
-        <NavButton buttonText="Github" url="https://github.com/MythosCulture"/>
-        <NavButton buttonText="LinkedIn" url="https://www.linkedin.com/in/sylvester-negron-b11618149/"/>
+        <h1>
+            <a href="#/" class="nav-title">
+                <b>Mythos</b>Culture
+            </a>
+        </h1>
+        
+        <NavButton buttonText="Github" :url="github"/>
     </div>
 </template>
 
 <script setup>
     import NavButton from './NavButton.vue';
+    const linkedin = "https://www.linkedin.com/in/sylvester-negron-b11618149/"
+    const github = "https://github.com/MythosCulture"
 </script>
 
 <style>
@@ -22,6 +28,7 @@
     background-color: #4b2530;
 }
 .nav-title{
+    text-decoration: none;
     padding: 0px 20px 10px 20px;
     letter-spacing: 5px;
     color: #fefded;

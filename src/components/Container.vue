@@ -11,6 +11,7 @@
             <Tag>JavaScript</Tag>
           </template>
         </ProjectBlock>
+        <!--
         <ProjectBlock 
         :url="scarabrp.url" 
         :title="scarabrp.title"
@@ -22,17 +23,7 @@
             <Tag>MVC</Tag>
           </template>
         </ProjectBlock>
-        <ProjectBlock
-        :url="ravenous.url" 
-        :title="ravenous.title"
-        :description="ravenous.description">
-        <template #tags>
-            <Tag>React</Tag>
-            <Tag>API Integration</Tag>
-            <Tag>TypeScript</Tag>
-            <Tag>JavaScript</Tag>
-          </template>
-        </ProjectBlock>
+        -->
         <ProjectBlock
         :title="processing.title"
         :description="processing.description">

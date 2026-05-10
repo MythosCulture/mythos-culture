@@ -31,3 +31,4 @@ node dist/bundle.js
 ## Credits
 
 Made with [createapp.dev](https://createapp.dev/)
+vue-infinity [github] (https://github.com/isaact/vue-infinity)
