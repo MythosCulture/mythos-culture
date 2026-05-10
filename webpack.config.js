@@ -13,7 +13,12 @@ const config = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+          compilerOptions: {
+            isCustomElement: (tag) => tag === 'gallery-ce'
+          }
+        }
       },
       {
         test: /\.css$/,
